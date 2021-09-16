@@ -1,5 +1,5 @@
-import { getSpellByName } from "../Services/getSpellByName"
-import { SpellEmbed } from '../template'
+const { getSpellByName } = require("../Services/getSpellByName")
+const { SpellEmbed } = require('../template')
 
 const commandController = async (msg) => {
     const command = "/spell"
@@ -17,4 +17,4 @@ const commandController = async (msg) => {
     }
 }
 
-export default commandController
+module.exports = commandController

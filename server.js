@@ -1,6 +1,6 @@
 require('dotenv').config();
-import Discord from 'discord.js'
-import commandController from './Controller/commandController';
+const Discord = require('discord.js') 
+const commandController = require('./Controller/commandController');
 
 const client = new Discord.Client();
 

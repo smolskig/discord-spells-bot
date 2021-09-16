@@ -1,8 +1,8 @@
 require('dotenv').config();
-import axios from 'axios'
+const axios = require('axios') 
 
 const http = axios.create({
     baseURL: process.env.API_URL
 })
 
-export default http
+module.exports = http
